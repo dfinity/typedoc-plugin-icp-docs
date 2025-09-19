@@ -2,6 +2,14 @@
   "name": "typedoc-plugin-icp-docs",
   "version": "0.0.1",
   "description": "Build Markdown docs to be published to js.icp.build",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfinity/typedoc-plugin-icp-docs"
+  },
+  "homepage": "https://github.com/dfinity/typedoc-plugin-icp-docs",
+  "bugs": "https://github.com/dfinity/typedoc-plugin-icp-docs/issues",
+  "author": "DFINITY Stiftung",
   "private": true,
   "type": "module",
   "exports": {
@@ -9,7 +17,9 @@
   },
   "files": [
     "dist",
-    "package.json"
+    "package.json",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "vite build",
