@@ -1,0 +1,28 @@
+name: test
+
+on:
+  merge_group:
+  pull_request:
+
+jobs:
+  unit_test:
+    name: unit_test:required
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PNPM
+        uses: dfinity/ci-tools/actions/setup-pnpm@main
+
+      - name: JS Build
+        run: pnpm build
+
+      # Check that the build output is up to date
+      - name: Check Build Output
+        run: |
+          if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
+            echo "Detected uncommitted changes after build. See status below:"
+            git diff --ignore-space-at-eol --text dist/
+            exit 1
+          fi
