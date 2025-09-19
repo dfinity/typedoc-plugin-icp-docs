@@ -10,6 +10,13 @@
   "homepage": "https://github.com/dfinity/typedoc-plugin-icp-docs",
   "bugs": "https://github.com/dfinity/typedoc-plugin-icp-docs/issues",
   "author": "DFINITY Stiftung",
+  "keywords": [
+    "typedoc",
+    "markdown",
+    "frontmatter",
+    "icp",
+    "internet-computer"
+  ],
   "private": true,
   "type": "module",
   "exports": {
