@@ -17,17 +17,6 @@ To setup the project, you need to run the following command:
 pnpm install
 ```
 
-## Package Distribution
-
-Since we don't publish the package to NPM, we distribute track the built assets in the `dist` folder.
-When you make changes to the code, you need to build the package by running the following command:
-
-```shell
-pnpm build
-```
-
-This will build the package and save the built assets in the `dist` folder.
-
 ## Code Style
 
 We use [Biome](https://biomejs.dev/) to enforce code style.

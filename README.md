@@ -4,11 +4,11 @@ This is a plugin for [Typedoc](https://typedoc.org/) that prepares Markdown docu
 
 ## Installation
 
-We don't publish the plugin to NPM at the moment. You can install it from the GitHub repository directly:
-
 ```shell
-npm install --save-dev https://github.com/dfinity/typedoc-plugin-icp-docs
+npm install --save-dev @dfinity/typedoc-plugin-icp-docs
 ```
+
+> This plugin requires the [typedoc-plugin-markdown](https://typedoc-plugin-markdown.org/) and [typedoc-plugin-frontmatter](https://typedoc-plugin-markdown.org/plugins/frontmatter) plugins, so you need to install them as well.
 
 ## Usage
 
@@ -20,7 +20,7 @@ In your `typedoc.json` file, add the plugin and the output:
   "plugins": [
     "typedoc-plugin-markdown",
     "typedoc-plugin-frontmatter",
-    "typedoc-plugin-icp-docs"
+    "@dfinity/typedoc-plugin-icp-docs"
   ],
   "outputs": [
     { "name": "markdown", "path": "src/content/tmp" },
@@ -29,7 +29,7 @@ In your `typedoc.json` file, add the plugin and the output:
 }
 ```
 
-> This plugin requires the [typedoc-plugin-markdown](https://typedoc-plugin-markdown.org/) and [typedoc-plugin-frontmatter](https://typedoc-plugin-markdown.org/plugins/frontmatter) plugins, so you need to install and configure them as well.
+> This plugin requires the [typedoc-plugin-markdown](https://typedoc-plugin-markdown.org/) and [typedoc-plugin-frontmatter](https://typedoc-plugin-markdown.org/plugins/frontmatter) plugins, so you need to configure them as well.
 
 For a more concrete setup example, see the [docs](https://github.com/dfinity/pic-js/tree/main/docs/) folder of the [dfinity/pic-js](https://github.com/dfinity/pic-js) repository.
 

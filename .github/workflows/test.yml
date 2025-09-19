@@ -15,14 +15,6 @@ jobs:
       - name: Setup PNPM
         uses: dfinity/ci-tools/actions/setup-pnpm@main
 
+      # Just check that the build command succeeds
       - name: JS Build
         run: pnpm build
-
-      # Check that the build output is up to date
-      - name: Check Build Output
-        run: |
-          if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
-            echo "Detected uncommitted changes after build. See status below:"
-            git diff --ignore-space-at-eol --text dist/
-            exit 1
-          fi
