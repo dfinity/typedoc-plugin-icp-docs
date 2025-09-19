@@ -1,4 +1,6 @@
-# typedoc-plugin-icp-docs
+# @dfinity/typedoc-plugin-icp-docs
+
+[![NPM Version](https://img.shields.io/npm/v/%40dfinity%2Ftypedoc-plugin-icp-docs)](https://www.npmjs.com/package/@dfinity/typedoc-plugin-icp-docs)
 
 This is a plugin for [Typedoc](https://typedoc.org/) that prepares Markdown documentation to be published to [js.icp.build](https://js.icp.build).
 
