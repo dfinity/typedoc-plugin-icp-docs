@@ -13,10 +13,9 @@ export function addPageFrontmatter(pageEvent: MarkdownPageEvent) {
       if (pageEvent.model.name.startsWith('@')) {
         const packageName = pageEvent.model.name.split('/')[1];
         title = titleFromIdCapitalized(packageName);
-      } else if (pageEvent.model.name === 'api' && pageEvent.model.parent?.name.startsWith('@')) {
-        title = API_HOMEPAGE_TITLE;
       } else {
-        title = titleFromIdCapitalized(pageEvent.model.name);
+        // This is typically the case for the api homepage
+        title = API_HOMEPAGE_TITLE;
       }
       break;
     case ReflectionKind.Document:
