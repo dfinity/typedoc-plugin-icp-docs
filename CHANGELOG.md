@@ -1,3 +1,9 @@
+## Unreleased
+
+### Fix
+
+- bump version in package.json (#2)
+
 ## v0.0.3 (2025-09-19)
 
 ### Fix
