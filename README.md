@@ -41,7 +41,7 @@ See [HACKING.md](./HACKING.md) for more information.
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for more information.
+Contributions are welcome! Please see [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for more information.
 
 ## License
 
