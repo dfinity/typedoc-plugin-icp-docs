@@ -33,12 +33,11 @@ jobs:
       - name: Build NPM package
         run: pnpm build
 
-      - name: Generate release notes
-        uses: dfinity/ci-tools/actions/generate-release-notes@main
+      # - name: Generate release notes
+      #   uses: dfinity/ci-tools/actions/generate-release-notes@main
 
       - name: Publish to npm
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: 'true'
         run: |
           pnpm publish --verbose --access public
